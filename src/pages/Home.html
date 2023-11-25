@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Software</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen">
+    <section class="bg-gradient max-w-1600">
+        <header class="header w-full flex justify-between items-center h-[100px] max-w-1600">
+            <div class="lg:w-[300px] w-[100px] -mt-1 h-[100px] all-center">
+                <button
+                    class="flex gap-2 rounded-2xl hover:bg-[#00fff31a] py-2 px-3 mr-3 font-bold transform lg:hidden block">
+                    <img src="../assets/img/vietnamese.svg" alt="Việt Nam" class="w-6 h-6 rounded-lg scale-icon">
+                    <span class="lg:block hidden">Việt Nam</span>
+                </button>
+                <a href="#" class="logo lg:block hidden">
+                    <img src="../assets/img/logo.png" alt="Logo INFINITY" class="!w-[100px] ">
+                </a>
+            </div>
+            <a href="#" class="logo lg:hidden block">
+                <img src="../assets/img/logo.png" alt="Logo INFINITY" class="!w-[160px] ">
+            </a>
+            <div class="lg:flex hidden gap-2 lg:right-10 right-1 relative items-center">
+                <button class="flex gap-2 rounded-2xl hover:bg-[#00fff31a] py-2 px-3 mr-3 font-bold transform">
+                    <img src="../assets/img/vietnamese.svg" alt="Việt Nam" class="w-6 h-6 rounded-lg scale-icon">
+                    Việt Nam
+                </button>
+                <div class="gap-2 flex">
+                    <a href="#"
+                        class="btn py-2 text-sm px-8 bg-[#10b0e7] hover:bg-[#11a5e4] text-white font-bold all-center gap-2 rounded-xl transform">
+                        <img src="../assets/img/register.svg" alt="Register" class="w-6 h-6">
+                        Đăng ký
+                    </a>
+                    <a href="#"
+                        class="btn py-2 text-sm px-6 bg-[#ff8831] hover:bg-[#ff742f] text-white font-bold all-center gap-2 rounded-xl transform">
+                        <img src="../assets/img/sign-in.svg" alt="Sign Up" class="w-6 h-6">
+                        Đăng nhập
+                    </a>
+                </div>
+            </div>
+            <div class="w-[100px] lg:hidden flex -mt-1 h-[100px] all-center">
+                <buton class="flex p-2 hover:bg-[#e1c10014] rounded-xl cursor-pointer" id="toggleButton">
+                    <img src="../assets/img/toggle-menu.svg" alt="Toggle" class="w-6 h-6 ">
+                </buton>
+            </div>
+            <div id="menu"
+                class="menu border border-[#e5e9f2] custom-shadow-2 rounded-2xl w-[300px] bg-white lg:hidden block">
+                <div class="py-3 pt-6 pb-40">
+                    <ul>
+                        <li class=" hover:bg-[#ededed]">
+                            <a href="#" class=" flex gap-2 text-sm px-6 py-2 text-[#4a4a54] font-bold">
+                                <img src="../assets/img/user-plus.svg" alt="Register" class="w-6 h-6">
+                                Đăng ký
+                            </a>
+                        </li>
+                        <li class=" hover:bg-[#ededed]">
+                            <a href="#" class=" flex gap-2 text-sm px-6 py-2 text-[#4a4a54] font-bold ">
+                                <img src="../assets/img/log-in.svg" alt="Sign Up" class="w-6 h-6">
+                                Đăng nhập
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-[#4a4a54] py-3 px-5 text-ss border-t border-[#e5e9f2] text-1">
+                    <span class="hover:underline cursor-pointer">Quyền riêng tư</span>
+                    <span class="relative -top-[2px]">.</span>
+                    <span class="hover:underline cursor-pointer">Điều khoản</span>
+                    <span class="relative -top-[2px]">.</span>
+                    <span class="hover:underline cursor-pointer">Dịch vụ</span>
+                    <span class="relative -top-[2px]">.</span>
+                    <span class="hover:underline cursor-pointer">Infinity © 2023</span>
+                </div>
+            </div>
+        </header>
+        <main class="w-full h-full relative max-w-1600">
+            <div
+                class="flex lg:flex-row flex-col lg:jusitfy-between justify-center lg:w-[80%] w-full m-auto gap-20 pt-10 pb-40">
+                <div class="lg:w-2/4 w-full lg:max-w-[40%] max-w-[80%] m-auto">
+                    <h1 class="text-infinity font-bold text-3xl lg:text-start text-center">INFINITY SOFTWARE</h1>
+                    <p class="text-base mt-2">Với phương châm
+                        <span class="italic font-medium">
+                            " Đừng cố gắng trở thành người thành công mà hãy cố gắng trở thành một người có
+                            giá trị "
+                        </span>
+                        <strong>INFINITY</strong>
+                        chúng tôi luôn nhắm tới trãi nghiệm của người dùng để mang đến một dịch vụ tốt
+                        nhất cho khách hàng
+                    </p>
+                </div>
+                <div class="lg:w-2/4 md:w-[90%] w-full m-auto lg:px-0 px-2">
+                    <div class="shadow-xl bg-white rounded-2xl lg:p-5 p-4">
+                        <h1 class="font-bold text-xl">Dịch vụ</h1>
+                        <ul class="py-3" id="serviceList"></ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="relative -top-20 max-w-1600">
+        <main class="lg:w-full md:w-[90%] w-full m-auto px-2">
+            <div id="socialMediaList"
+                class="bg-white flex flex-wrap justify-center rounded-xl shadow-2xl lg:gap-6 gap-2 sm:p-3 p-0 lg:w-[80%] w-full m-auto">
+            </div>
+        </main>
+    </section>
+    <section class="max-w-1600">
+        <main class="w-full lg:px-40 sm:px-20 px-4 lg:flex-row flex-col flex justify-between gap-10">
+            <div class="lg:w-2/4 w-full">
+                <div class="custom-shadow-3 bg-white rounded-2xl p-6 all-center flex-col cursor-pointer ">
+                    <img src="../assets/img/item01.png" alt="Item 1" width="200px" height="200px" class="scale-icon">
+                    <h1 class="py-4 font-bold text-2xl text-social">Dịch vụ Social</h1>
+                    <P class="w-[62%] text-sm font-semibold py-4 ">Phần mềm tối ưu với tốc độ tên
+                        lửa, giúp bạn hoàn tất công việc 1 cách nhanh chóng và hiệu quả</P>
+                    <button class="btn-social py-3 px-8 rounded-2xl font-bold">Xem thêm</button>
+
+                </div>
+            </div>
+            <div class="lg:w-2/4 w-full">
+                <div class="custom-shadow-3 bg-white rounded-2xl p-6 all-center flex-col cursor-pointer ">
+                    <img src="../assets/img/item02.png" alt="Item 2" width="180px" height="180px" class="scale-icon">
+                    <h1 class="py-4 font-bold text-2xl text-social">Dịch vụ Social</h1>
+                    <P class="w-[62%] text-sm font-semibold py-4 ">Phần mềm tối ưu với tốc độ tên
+                        lửa, giúp bạn hoàn tất công việc 1 cách nhanh chóng và hiệu quả</P>
+                    <button class="btn-social py-3 px-8 rounded-2xl font-bold">Xem thêm</button>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section>
+        <footer class="w-full bg-[#ededed] max-w-1600 mt-40">
+            <div class="max-w-[80%] m-auto flex gap-2 items-center h-10 all-center">
+                <a href="#" class="logo ">
+                    <img src="../assets/img/logo.png" alt="Logo INFINITY" class="!w-[30px] ">
+                </a>
+                <P class="text-monospace">Copyright © 2023 Infinity Software</P>
+            </div>
+        </footer>
+    </section>
+    <script src="../assets/js/toggleButton.js"></script>
+    <script src="../assets/js/socialMediaList.js"></script>
+</body>
+
+</html>

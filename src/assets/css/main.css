@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.width-cus {
+    width: calc(100% - 300px);
+}
+
+.text-ss {
+    font-size: 12px;
+}
+
+.custom-shadow {
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 8px 3px -4px rgba(176, 176, 176, 1);
+}
+
+.custom-shadow:hover {
+    box-shadow: 0 4px 6px -2px rgba(176, 176, 176, 1);
+}
+
+.scale-icon {
+    transition: transform 0.5s ease;
+
+    &:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.btn {
+    box-shadow: 0 8px 3px -4px rgb(176, 176, 176);
+    transition: transform 0.5s ease;
+}
+
+.btn:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.btn-social {
+    color: #fff;
+    background-color: #ff8831;
+    border-color: #ff8831;
+    cursor: pointer;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    transition: all .135s ease-in-out;
+    transform: scale(1.001);
+}
+
+.btn-social:hover {
+    background-color: #ff742f;
+    border-color: #ff742f;
+}
+
+.btn-social:active {
+    transform: scale(0.98);
+    transition: all .135s ease-in-out;
+}
+
+.transform {
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.custom-shadow-2 {
+    box-shadow: 0 3px 12px 1px rgba(58, 34, 114, 0.15);
+}
+
+.custom-shadow-3 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+}
+
+.custom-shadow-4 {
+    box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, .3);
+}
+
+.text-1 {
+    font-family: monospace;
+}
+
+.menu {
+    transition: transform 0.3s ease-out;
+    transform: translateX(120%);
+    z-index: 100000;
+    position: fixed;
+    top: 98px;
+    right: 0;
+    width: 300px;
+    background-color: white;
+    box-shadow: -12px 0 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.menu-visible {
+    transform: translateX(-12px);
+}
+
+.icon-social:hover {
+    background: rgba(115, 103, 240, .1);
+    border-color: rgba(115, 103, 240, .3);
+}
+
+.bg-gradient {
+    background-color: transparent;
+    background-image: linear-gradient(135deg, #eae8fd 0, #fce5e6 100%);
+}
+
+.text-infinity {
+    background: rgb(22, 104, 211);
+    background: linear-gradient(90deg, rgba(22, 104, 211, 1) 10%, rgba(12, 217, 242, 1) 24%, rgba(22, 104, 211, 1) 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-social {
+    color: #7367f0;
+}
+
+.text-monospace {
+    font-family: monospace;
+}
+
+.progress,
+.progress-stacked {
+    --bs-progress-height: 0.75rem;
+    --bs-progress-font-size: 0.75rem;
+    --bs-progress-bg: #f1f0f2;
+    --bs-progress-border-radius: 3.125rem;
+    --bs-progress-box-shadow: var(--bs-box-shadow-inset);
+    --bs-progress-bar-color: #fff;
+    --bs-progress-bar-bg: #7367f0;
+    --bs-progress-bar-transition: width 0.6s ease;
+    display: flex;
+    height: var(--bs-progress-height);
+    overflow: hidden;
+    font-size: var(--bs-progress-font-size);
+    background-color: var(--bs-progress-bg);
+    border-radius: var(--bs-progress-border-radius)
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--bs-progress-bar-color);
+    text-align: center;
+    white-space: nowrap;
+    transition: var(--bs-progress-bar-transition);
+}
+
+.progress .progress-bar:first-child {
+    border-top-left-radius: 3.125rem;
+    border-bottom-left-radius: 3.125rem;
+}
+
+.progress .progress-bar:last-child {
+    border-top-right-radius: 3.125rem;
+    border-bottom-right-radius: 3.125rem;
+}
+
+.facebook {
+    width: 90%;
+    background-color: #0866ff;
+}
+
+.shopee {
+    width: 20%;
+    background-color: #fd5621;
+}
+
+.tiktok {
+    width: 23%;
+    background-color: #000;
+}
+
+.instagram {
+    width: 33%;
+    background-color: #fe0092;
+}
+
+.google {
+    width: 47%;
+    background-color: #4bb14f;
+}
+
+.max-w-1600 {
+    max-width: 1600px;
+    margin: auto;
+}

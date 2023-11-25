@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/service.css ">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;600&family=Roboto:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+
+<body class="h-screen bg-[#f8f7fa] flex flex-col m-0">
+    <aside id="sidebar"
+        class="sidebar w-full max-w-[300px] bg-white border-r overflow-y-auto border-[#e5e9f2] custom-shadow-4 rounded-lg h-screen fixed z-30 custom-sidebar">
+        <div class="logo w-fulll all-center h-[90px]">
+            <a href="#" class="logo">
+                <img src="../assets/img/logo.png" alt="Logo INFINITY" class="!w-[80px] ">
+            </a>
+        </div>
+        <div class="all-center flex-col w-full">
+            <img src="../assets/img/avatar.png" alt="avatar" class="rounded-full border-4 border-[#ff8831]" width="46px"
+                height="46px" />
+            <div class="flex gap-2 py-2">
+                <h1 class="font-bold">Username</h1>
+                -
+                <p class="text-[#8094ae]">Khách hàng</p>
+            </div>
+            <div class="flex gap-2 items-center pl-4">
+                <img src="../assets/img/coin.svg" alt="Coin" width="20px" height="20px">
+                <p class="font-medium text-xl text-[#c8982f]">100.000</p>
+            </div>
+        </div>
+        <div class="py-4 px-4">
+            <a href="./Service.html" class="font-bold flex gap-4 items-center item-sidebar p-2 rounded-lg text-menu"
+                id="overviewItem">
+                <img src="../assets/img/dashboard.png" alt="Dashboard" width="40px" height="40px">
+                Tổng quan
+            </a>
+        </div>
+        <p class="py-2 px-3 font-bold">Dịch vụ</p>
+        <div class="py-1 px-4" id="serviceList">
+            <div class="font-bold text-menu flex items-center justify-between item-sidebar-dropdown text-[#5d596c] p-2 rounded-lg cursor-pointer dropdown-toggle"
+                id="toggleDropdown">
+                <div class="flex gap-4 items-center">
+                    <img src="../assets/img/Facebook.png" alt="Dashboard" width="40px" height="40px">
+                    Dịch vụ Facebook
+                </div>
+                <img src="../assets/img/arrowdown.svg" alt="Arrow" width="16px" height="16px" class="arrow">
+            </div>
+        </div>
+        <ul class="pl-[50px] menu-dropdown" id="dropdownMenu">
+            <li class="py-2 cursor-pointer text-gray-700 hover:text-[#ff8831] font-semibold flex justify-between pr-4">
+                <a href="#">Tăng like bài viết FB</a>
+                <p class="text-sm text-[#ff742f] font-bold">12đ</p>
+            </li>
+            <li class="py-2 cursor-pointer text-gray-700 hover:text-[#ff8831] font-semibold flex justify-between pr-4">
+                <a href="#">Tăng share bài viết FB</a>
+                <p class="text-sm text-[#ff742f] font-bold">300đ</p>
+            </li>
+            <li class="py-2 cursor-pointer text-gray-700 hover:text-[#ff8831] font-semibold flex justify-between pr-4">
+                <a href="#">Tăng Comment FB</a>
+                <p class="text-sm text-[#ff742f] font-bold">300đ</p>
+            </li>
+            <li class="py-2 cursor-pointer text-gray-700 hover:text-[#ff8831] font-semibold flex justify-between pr-4">
+                <a href="#">Tăng like cho Bình luận</a>
+                <p class="text-sm text-[#ff742f] font-bold">60đ</p>
+            </li>
+            <li class="py-2 cursor-pointer text-gray-700 hover:text-[#ff8831] font-semibold flex justify-between pr-4">
+                <a href="#">Tăng mắt LiveStream</a>
+                <p class="text-sm text-[#ff742f] font-bold">3đ</p>
+            </li>
+            <li class="py-2 cursor-pointer text-gray-700 hover:text-[#ff8831] font-semibold flex justify-between pr-4">
+                <a href="#">Tăng like, follow Fanpage</a>
+                <p class="text-sm text-[#ff742f] font-bold">35đ</p>
+            </li>
+            <li class="py-2 cursor-pointer text-gray-700 hover:text-[#ff8831] font-semibold flex justify-between pr-4">
+                <a href="#">Đánh giá Fanpage</a>
+                <p class="text-sm text-[#ff742f] font-bold">35đ</p>
+            </li>
+        </ul>
+        <div class="py-3 px-4">
+            <a href="./Contacts.html" class="font-bold flex gap-4 items-center item-sidebar p-2 rounded-lg text-menu"
+                id="lienheItem">
+                <img src="../assets/img/contact.png" alt="Contact" width="40px" height="40px">
+                Liên hệ
+            </a>
+        </div>
+        <div class="py-3 px-4">
+            <a href="./Support.html" class="font-bold flex gap-4 items-center item-sidebar p-2 rounded-lg text-menu"
+                id="helpItem">
+                <img src="../assets/img/support.png" alt="upport" width="40px" height="40px">
+                Hỗ trợ
+            </a>
+        </div>
+    </aside>
+    <section class="w-full relative pt-2 pb-8 lg:pl-[300px] ">
+        <div class=" top-0 bg-[#f8f7fa] fixed w-full h-[70px] z-10"></div>
+        <header
+            class="header pr-3 flex justify-between items-center h-[70px] border-b border-[#e5e9f2] z-20 fixed right-3 bg-white custom-shadow-4 rounded-lg ">
+            <div class="w-[100px] -mt-1 h-[100px] all-center">
+                <div class="w-[100px] lg:hidden flex -mt-1 h-[100px] all-center">
+                    <button class="flex p-2 hover:bg-[#e1c10014] rounded-xl cursor-pointer" id="toogleOpenSidebar">
+                        <img src="../assets/img/toggle-menu.svg" alt="Toggle" class="w-6 h-6 ">
+                    </button>
+                </div>
+            </div>
+            <div class="flex gap-2 lg:right-4 right-1 relative items-center ">
+                <button
+                    class="flex gap-2 rounded-2xl hover:bg-[#00fff31a] py-2 px-4 mr-3 font-bold transform text-[#474747]">
+                    <img src="../assets/img/vietnamese.svg" alt="Việt Nam" class="w-6 h-6 rounded-lg scale-icon">
+                    <p class="sm:block hidden">Việt Nam</p>
+                </button>
+                <div class="flex items-center gap-1 cursor-pointer sm:pr-0 pr-3" id="toggleButton">
+                    <img src="../assets/img/avatar.png" alt="avatar" class="rounded-full border-4 border-[#ff8831]"
+                        width="40px" height="40px" />
+                    <!-- <p class="font-bold sm:block hidden">Fullname</p>
+                    <img src="../assets/img/arrow-down.svg" alt="arrow down" width="20px" height="20px"
+                        class="sm:block hidden"> -->
+                </div>
+            </div>
+            <div id="menu"
+                class="menu border border-[#e5e9f2] custom-shadow-2 rounded-2xl w-[300px] bg-white top-[82px]">
+                <div class="bg-[#f5f6fa] border border-[#e5e9f2] rounded-t-2xl">
+                    <div class="p-5 flex items-center gap-4">
+                        <img src="../assets/img/avatar.png" alt="avatar" class="rounded-full border-4 border-[#ff8831]"
+                            width="40px" height="40px" />
+                        <div class="">
+                            <p class="font-semibold">Username</p>
+                            <p class="text-[#8094ae] text-xs">Username@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="text-base py-3 px-2">
+                    <a href="#">
+                        <li
+                            class="py-2 flex gap-3 items-center text-[#000] px-3 hover:bg-[#f1f1f1] rounded-lg font-medium">
+                            <img src="../assets/img/card1.png" width="40px" height="40px">
+                            Nạp tiền
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li
+                            class="py-2 flex gap-3 items-center text-[#000] px-3 hover:bg-[#f1f1f1] rounded-lg font-medium">
+                            <img src="../assets/img/card-info1.png" alt="User" width="40px" height="40px">
+                            Thông tin
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li
+                            class="py-2 flex gap-3 items-center text-[#000] px-3 hover:bg-[#f1f1f1] rounded-lg font-medium">
+                            <img src="../assets/img/aa.png" alt="Password" width="40px" height="40px">
+                            Đổi mật khẩu
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li
+                            class="py-2 flex gap-3 items-center text-[#000] px-3 hover:bg-[#f1f1f1] rounded-lg font-medium">
+                            <img src="../assets/img/icon-moon.png" alt="moon" width="40px" height="40px">
+                            Chế độ màu tối
+                        </li>
+                    </a>
+                </ul>
+                <div class=" text-base border-t border-[#e5e9f2]">
+                    <a href="./Home.html"
+                        class="py-2 flex gap-3 items-center text-[#474747] hover:text-[#000] py-3 px-5 hover:bg-[#f1f1f1] hover:rounded-b-2xl ">
+                        <img src="../assets/img/sign-out.svg" alt="Sign Out" width="22px" height="22px">
+                        Đăng xuất
+                    </a>
+                </div>
+            </div>
+        </header>
+
+    </section>
+    <div class="overlay" id="overlay"></div>
+    <script src="../assets/js/toggleButton.js"></script>
+    <script src="../assets/js/socialMediaList.js"></script>
+    <script src="../assets/js/dropdownMenu.js"></script>
+    <script src="../assets/js/activeItems.js"></script>
+    <script src="../assets/js/charts/chart-ecommerce.js"></script>
+</body>
+
+</html>
